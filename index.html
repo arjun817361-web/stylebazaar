@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="StyleBazaar — fashion, beauty, lifestyle and tech finds.">
+<title>StyleBazaar | Discover Your Style</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#"><span class="brand-mark">S</span><span>style<span class="brand-light">bazaar</span><small>CURATED FINDS. SMART SHOPPING.</small></span></a>
+  <div class="search-wrap"><input id="search" type="search" placeholder="Search products, brands, categories..." aria-label="Search products"><span>⌕</span></div>
+  <a class="nav-cta" href="#products">Explore Finds <span>↗</span></a>
+</header>
+<nav class="category-nav" id="categoryNav">
+  <button class="cat active" data-category="All">All Finds</button>
+  <button class="cat" data-category="Fashion">Fashion</button>
+  <button class="cat" data-category="Beauty">Beauty</button>
+  <button class="cat" data-category="Jewellery">Jewellery</button>
+  <button class="cat" data-category="Electronics">Electronics</button>
+  <button class="cat" data-category="Home">Home & Living</button>
+</nav>
+<main>
+<section class="hero">
+ <div class="hero-copy"><p class="eyebrow"><span class="dot"></span> YOUR EVERYDAY EDIT</p>
+ <h1>Good finds.<br><em>Great style.</em></h1>
+ <p class="hero-sub">A thoughtfully picked collection of fashion, beauty and lifestyle favourites — all in one place.</p>
+ <a class="button dark" href="#products">Shop the collection <span>→</span></a>
+ <div class="hero-note"><span class="note-stars">★★★★★</span><span>Fresh picks for your everyday</span></div></div>
+ <div class="hero-art"><div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+   <div class="art-card card-back"><span>THE STYLE EDIT</span><b>Everyday<br>essentials</b><i>01 / 04</i></div>
+   <div class="art-card card-front"><div class="art-sun"></div><span class="mini-label">CURATED FOR YOU</span><div class="art-shape shape-one"></div><div class="art-shape shape-two"></div><div class="art-shape shape-three"></div><b>Find your<br>next favourite.</b></div>
+   <div class="floating-tag">NEW SEASON <span>✳</span></div>
+ </div>
+</section>
+<section class="trust-strip"><div><b>01</b><span>Curated picks</span></div><div><b>02</b><span>Multiple stores</span></div><div><b>03</b><span>Easy to explore</span></div><div class="trust-note">A little inspiration for your next find.</div></section>
+<section class="section-head" id="products"><div><p class="eyebrow">THE COLLECTION</p><h2>Explore our <em>favourites</em></h2></div><div class="result-count" id="resultCount">Products curated for you</div></section>
+<div class="filters"><div class="filter-label">BROWSE BY MOOD</div><div id="filterChips" class="chips"><button class="chip selected" data-category="All">Everything</button><button class="chip" data-category="Fashion">Wear it</button><button class="chip" data-category="Beauty">Glow up</button><button class="chip" data-category="Jewellery">Little details</button><button class="chip" data-category="Electronics">Tech picks</button><button class="chip" data-category="Home">At home</button></div></div>
+<section class="product-grid" id="productGrid" aria-live="polite"></section>
+<section class="affiliate-note"><div class="note-icon">✳</div><div><b>A quick note before you shop</b><p>Some links on this website may be affiliate links. If you buy through them, we may earn a commission at no extra cost to you. Product details and prices can change on the seller’s website.</p></div></section>
+<section class="newsletter"><div><p class="eyebrow">THE GOOD-FIND CLUB</p><h2>Discover something <em>lovely.</em></h2><p>Bookmark us for your next shopping browse.</p></div><a class="button light" href="#products">Explore picks <span>↗</span></a></section>
+</main>
+<footer><a class="brand footer-brand" href="#"><span class="brand-mark">S</span><span>style<span class="brand-light">bazaar</span><small>CURATED FINDS. SMART SHOPPING.</small></span></a><div class="footer-links"><a href="#products">Shop finds</a><a href="#disclosure" onclick="document.querySelector('.affiliate-note').scrollIntoView({behavior:'smooth'});return false;">Affiliate disclosure</a></div><p>© <span id="year"></span> StyleBazaar. Independent shopping inspiration.</p></footer>
+<script src="products.js"></script><script src="app.js"></script>
+</body></html>
